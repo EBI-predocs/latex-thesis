@@ -1,6 +1,11 @@
 Thesis writing in LaTeX
 =======================
 
+* [LaTeX general](#latex-general)
+* [Thesis writing](#thesis-writing)
+* [Example document](#example-document)
+* [And finally](#and-finally)
+
 ## LaTeX general
 
 * Install [TeXLive][]. It’s the One True™ TeX distribution system.
@@ -102,9 +107,36 @@ Thesis writing in LaTeX
   * [Template from Computer Science department][template-cs]
     * [Used by Samuel][sam-thesis], successfully
 
+## Example document
+
+The example file `thesis.tex` contains the outline for a thesis source document.
+Each chapter has its own file and is included via `\input`. Configuration and
+custom macros reside in `config.tex`. This is also where packages should be
+loaded.
+
+`.latexmkrc` is the configuration for `latexmk`. At the moment it is empty
+except for a commented-out line which would cause it to pass the `-shell-escape`
+option to `xelatex`. This option is required by certain packages, such as
+`minted`.
+
+Finally, the `Makefile` enables compilation via simple `make` verbs. To
+recompile the document, use
+
+```bash
+make
+# or
+make thesis
+```
+
+To trigger continuous background compilation for interactive preview, use
+
+```bash
+make preview
+```
+
 ## And finally
 
-Need inspiration?
+Need inspiration? Take a look here:
 
 * `texdoc tikz`
 * `texdoc pgfplots`
