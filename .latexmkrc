@@ -1,3 +1,3 @@
-$pdflatex = 'xelatex -shell-escape %O %S';
+#$pdflatex = 'xelatex -shell-escape %O %S';
 
 # vim: ft=perl
