@@ -1,19 +1,21 @@
 LATEXMK = latexmk -xelatex -r .latexmkrc
 
-.PHONY: thesis
-thesis: thesis.pdf
+target = thesis
 
-thesis.pdf: thesis.tex
-	${LATEXMK} thesis
+.PHONY: ${target}
+${target}: ${target}.pdf
+
+${target}.pdf: ${target}.tex
+	${LATEXMK} ${target}
 
 .PHONY: preview
 preview:
-	${LATEXMK} -pvc thesis
+	${LATEXMK} -pvc ${target}
 
 .PHONY: clean
 clean:
-	${RM} $(filter-out thesis.tex thesis.pdf,$(shell ls thesis.*))
+	${RM} $(filter-out %.tex %.pdf,$(shell ls ${target}.*))
 
 .PHONY: cleanall
 cleanall: clean
-	${RM} thesis.pdf
+	${RM} ${target}.pdf
