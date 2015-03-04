@@ -1,11 +1,13 @@
 LATEXMK = latexmk -xelatex -r .latexmkrc
 
 target = thesis
+references := references.bib
+includes := $(shell ls *.tex) ${references}
 
 .PHONY: ${target}
 ${target}: ${target}.pdf
 
-${target}.pdf: ${target}.tex
+${target}.pdf: ${includes}
 	${LATEXMK} ${target}
 
 .PHONY: preview
