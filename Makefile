@@ -17,6 +17,8 @@ preview:
 .PHONY: clean
 clean:
 	${RM} $(filter-out %.tex %.pdf,$(shell ls ${target}.*))
+	# The following is occasionally necessary due to a nasty bug in biber.
+	${RM} -r $(shell biber --cache)
 
 .PHONY: cleanall
 cleanall: clean
