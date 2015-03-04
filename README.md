@@ -134,6 +134,18 @@ To trigger continuous background compilation for interactive preview, use
 make preview
 ```
 
+### Requirements
+
+The example file requires the following fonts to be available for successful
+compilation:
+
+* [TeX Gyre Pagella][tex-gyre]
+* [Droid Sans][droid]
+* Droid Sans Mono
+
+Download the fonts (for the last two, go on the website and click the
+“download”/arrow button) and install them on your system.
+
 ## And finally
 
 Need inspiration? Take a look here:
@@ -158,3 +170,5 @@ Need inspiration? Take a look here:
 [template-cs]: https://github.com/cambridge/thesis
 [sam-thesis]: https://github.com/loopasam/thesis
 [showcase]: http://tex.stackexchange.com/q/1319/42
+[tex-gyre]: http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella/qpl2.004otf.zip
+[droid]: http://www.google.com/fonts#UsePlace:use/Collection:Droid+Sans|Droid+Sans+Mono
