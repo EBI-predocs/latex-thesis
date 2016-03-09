@@ -40,8 +40,6 @@ Thesis writing in LaTeX
 * LaTeX is unforgiving, but not forthcoming with error messages. Use
   [`nag`][nag] to get better warnings (see example template for usage).
 
-* Use the [`fixltx2e`][fixltx2e] package to fix some bugs in LaTeX.
-
 * `\figure` and `\table` are *floating* environments. They float. That is their
   purpose. If you really want figures with a fixed position (but consider this
   carefully), don’t use `\figure`, and use `\captionof` to create a non-floating
