@@ -83,7 +83,7 @@ Thesis writing in LaTeX
 
 ## Thesis writing
 
-* Use Git from the start, commit changes religiously
+* Use Git from the start, commit changes religiously and have a look at [`gitinfo2`][gitinfo2](helpful for the revision phase)
 
 * Organisation
     * One file per chapter
@@ -170,3 +170,4 @@ Need inspiration? Take a look here:
 [showcase]: http://tex.stackexchange.com/q/1319/42
 [tex-gyre]: http://www.gust.org.pl/projects/e-foundry/tex-gyre/pagella/qpl2.004otf.zip
 [droid]: http://www.google.com/fonts#UsePlace:use/Collection:Droid+Sans|Droid+Sans+Mono
+[gitinfo2]: https://www.ctan.org/pkg/gitinfo2
