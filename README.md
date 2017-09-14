@@ -72,7 +72,7 @@ Thesis writing in LaTeX
   keys (usually of the format `Author:Year`) – this makes usage with LaTeX
   vastly easier
 
-* For numbers and units in text, use [`siunitx`][siunitx]. I recomment not using
+* For numbers and units in text, use [`siunitx`][siunitx]. I recommend not using
   naked numbers in text at all (always use `\num{x}` instead).
 
 * [`todonotes`][todonotes] for “TO DO”s. However, this interacts badly with
@@ -83,7 +83,8 @@ Thesis writing in LaTeX
 
 ## Thesis writing
 
-* Use Git from the start, commit changes religiously and have a look at [`gitinfo2`][gitinfo2] (helpful for the revision phase)
+* Use Git from the start, commit changes religiously and have a look at
+[`gitinfo2`][gitinfo2] (helpful for the revision phase)
 
 * Organisation
     * One file per chapter
