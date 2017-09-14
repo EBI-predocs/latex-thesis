@@ -83,7 +83,7 @@ Thesis writing in LaTeX
 
 ## Thesis writing
 
-* Use Git from the start, commit changes religiously and have a look at [`gitinfo2`][gitinfo2](helpful for the revision phase)
+* Use Git from the start, commit changes religiously and have a look at [`gitinfo2`][gitinfo2] (helpful for the revision phase)
 
 * Organisation
     * One file per chapter
